@@ -1,0 +1,102 @@
+> init
+<<<
++ NotA.txt nota.txt
++ NotB.txt notb.txt
++ NotF.txt notf.txt
++ Notwug.txt notwug.txt
+
+> add NotA.txt
+<<<
+> add NotB.txt
+<<<
+> commit "NotA and Not B added"
+<<<
+= NotA.txt nota.txt
+= NotB.txt notb.txt
+> add NotF.txt
+<<<
+> add Notwug.txt
+<<<
+> commit "NotF and Notwug added"
+<<<
+= NotF.txt notf.txt
+= Notwug.txt notwug.txt
+> rm NotA.txt
+<<<
+> commit "removed NotA"
+<<<
+* NotA.tx
+= NotB.txt notb.txt
+> rm NotB.txt
+<<<
+> commit "removed NotB"
+<<<
+*NotB.txt
+>branch taiga
+<<<
+>checkout taiga
+<<<
++ wug.txt wug.txt
++ wug2.txt wug2.txt
++ wug3.txt wug3.txt
+> add wug2.txt
+<<<
+> add wug.txt
+<<<
+> add wug3.txt
+<<<
+> commit "Taiga added"
+<<<
+> status
+=== Branches ===
+*taiga
+master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
++ a.txt a.txt
+> add a.txt
+<<<
+> status
+=== Branches ===
+*taiga
+master
+
+=== Staged Files ===
+a.txt
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
+> commit "added a.txt"
+<<<
+> status
+=== Branches ===
+*taiga
+master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
+
+
+
+
+
+
